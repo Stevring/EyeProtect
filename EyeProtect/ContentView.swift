@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var itemProvider = NotifyItemProvider()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                NavigationLink {
+                    List(itemProvider.items) { item in
+                        NotifyItemRow(viewModel: NotifyItemViewModel(item: item)) {
+                            itemProvider.deleteItem(item: item)
+                        }
+                    }
+                } label: {
+                    Text("Current")
+                }
+                NavigationLink {
+                    AddNewItem(provider: itemProvider)
+                } label: {
+                    Text("Add")
+                }
+            }
+            .onAppear {
+                itemProvider.fetch(combine: false)
+            }
+            .onDisappear {
+                itemProvider.writeItem()
+            }
         }
-        .padding()
     }
 }
 
@@ -24,11 +43,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-/**
- * Model Layer
- * NotifyItem
- *  - Title // string
- *  - RepeatInterval // int (second)
- *  - Message // string
- */

@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		535A38F22A4BDC8600AFB1C8 /* NotifyItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535A38F12A4BDC8600AFB1C8 /* NotifyItemRow.swift */; };
+		535A38F42A4BFA6400AFB1C8 /* AddNewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535A38F32A4BFA6400AFB1C8 /* AddNewItem.swift */; };
+		535A38F72A4BFDC400AFB1C8 /* NotifyItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535A38F62A4BFDC400AFB1C8 /* NotifyItemViewModel.swift */; };
 		A2F6F0482A4B1DB300C2C2E3 /* EyeProtectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6F0472A4B1DB300C2C2E3 /* EyeProtectApp.swift */; };
 		A2F6F04A2A4B1DB300C2C2E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6F0492A4B1DB300C2C2E3 /* ContentView.swift */; };
 		A2F6F04C2A4B1DB800C2C2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F6F04B2A4B1DB800C2C2E3 /* Assets.xcassets */; };
 		A2F6F04F2A4B1DB800C2C2E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F6F04E2A4B1DB800C2C2E3 /* Preview Assets.xcassets */; };
 		A2F6F0582A4B2D4200C2C2E3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6F0572A4B2D4200C2C2E3 /* Model.swift */; };
 		A2F6F05B2A4B2E3A00C2C2E3 /* NotifyItemModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6F05A2A4B2E3A00C2C2E3 /* NotifyItemModelService.swift */; };
-		A2F6F05D2A4B2F3C00C2C2E3 /* NotifyItems.json in Resources */ = {isa = PBXBuildFile; fileRef = A2F6F05C2A4B2F3C00C2C2E3 /* NotifyItems.json */; };
 		A2F6F0652A4B33E800C2C2E3 /* EyeProtectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6F0642A4B33E800C2C2E3 /* EyeProtectTests.swift */; };
 		A2F6F06C2A4B342700C2C2E3 /* NotifyItemModelServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F6F06B2A4B342700C2C2E3 /* NotifyItemModelServiceTests.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		535A38F12A4BDC8600AFB1C8 /* NotifyItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyItemRow.swift; sourceTree = "<group>"; };
+		535A38F32A4BFA6400AFB1C8 /* AddNewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItem.swift; sourceTree = "<group>"; };
+		535A38F62A4BFDC400AFB1C8 /* NotifyItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyItemViewModel.swift; sourceTree = "<group>"; };
 		A2F6F0442A4B1DB300C2C2E3 /* EyeProtect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeProtect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F6F0472A4B1DB300C2C2E3 /* EyeProtectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeProtectApp.swift; sourceTree = "<group>"; };
 		A2F6F0492A4B1DB300C2C2E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +42,6 @@
 		A2F6F0502A4B1DB800C2C2E3 /* EyeProtect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeProtect.entitlements; sourceTree = "<group>"; };
 		A2F6F0572A4B2D4200C2C2E3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A2F6F05A2A4B2E3A00C2C2E3 /* NotifyItemModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyItemModelService.swift; sourceTree = "<group>"; };
-		A2F6F05C2A4B2F3C00C2C2E3 /* NotifyItems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NotifyItems.json; sourceTree = "<group>"; };
 		A2F6F0622A4B33E800C2C2E3 /* EyeProtectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeProtectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F6F0642A4B33E800C2C2E3 /* EyeProtectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeProtectTests.swift; sourceTree = "<group>"; };
 		A2F6F06B2A4B342700C2C2E3 /* NotifyItemModelServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyItemModelServiceTests.swift; sourceTree = "<group>"; };
@@ -61,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		535A38F52A4BFDB500AFB1C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				535A38F62A4BFDC400AFB1C8 /* NotifyItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A2F6F03B2A4B1DB300C2C2E3 = {
 			isa = PBXGroup;
 			children = (
@@ -82,13 +94,16 @@
 		A2F6F0462A4B1DB300C2C2E3 /* EyeProtect */ = {
 			isa = PBXGroup;
 			children = (
+				535A38F52A4BFDB500AFB1C8 /* ViewModel */,
 				A2F6F0592A4B2E2000C2C2E3 /* Service */,
 				A2F6F0562A4B2D2F00C2C2E3 /* Model */,
 				A2F6F0472A4B1DB300C2C2E3 /* EyeProtectApp.swift */,
 				A2F6F0492A4B1DB300C2C2E3 /* ContentView.swift */,
+				535A38F12A4BDC8600AFB1C8 /* NotifyItemRow.swift */,
 				A2F6F04B2A4B1DB800C2C2E3 /* Assets.xcassets */,
 				A2F6F0502A4B1DB800C2C2E3 /* EyeProtect.entitlements */,
 				A2F6F04D2A4B1DB800C2C2E3 /* Preview Content */,
+				535A38F32A4BFA6400AFB1C8 /* AddNewItem.swift */,
 			);
 			path = EyeProtect;
 			sourceTree = "<group>";
@@ -105,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				A2F6F0572A4B2D4200C2C2E3 /* Model.swift */,
-				A2F6F05C2A4B2F3C00C2C2E3 /* NotifyItems.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,7 +223,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2F6F04F2A4B1DB800C2C2E3 /* Preview Assets.xcassets in Resources */,
-				A2F6F05D2A4B2F3C00C2C2E3 /* NotifyItems.json in Resources */,
 				A2F6F04C2A4B1DB800C2C2E3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +244,10 @@
 				A2F6F0582A4B2D4200C2C2E3 /* Model.swift in Sources */,
 				A2F6F05B2A4B2E3A00C2C2E3 /* NotifyItemModelService.swift in Sources */,
 				A2F6F04A2A4B1DB300C2C2E3 /* ContentView.swift in Sources */,
+				535A38F22A4BDC8600AFB1C8 /* NotifyItemRow.swift in Sources */,
 				A2F6F0482A4B1DB300C2C2E3 /* EyeProtectApp.swift in Sources */,
+				535A38F42A4BFA6400AFB1C8 /* AddNewItem.swift in Sources */,
+				535A38F72A4BFDC400AFB1C8 /* NotifyItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +403,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiafeiyu.EyeProtect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +431,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiafeiyu.EyeProtect;
 				PRODUCT_NAME = "$(TARGET_NAME)";

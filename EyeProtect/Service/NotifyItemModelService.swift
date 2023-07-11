@@ -8,23 +8,18 @@
 import Foundation
 
 class NotifyItemModelService {
-    var items: [NotifyItem] = []
-    func allNotifyItems() -> [NotifyItem] {
-        if items.count > 0 {
-            return items
-        }
+    static func allNotifyItems() -> [NotifyItem] {
         let fileURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first!.appendingPathComponent("NotifyItemModel").appendingPathExtension("json")
         do {
             let data = try Data(contentsOf: fileURL) // Don't know why FileManager.default.contents(atPath: ) returns nil, but Data(contentsOf:) works fine.
-            items = try JSONDecoder().decode([NotifyItem].self, from: data)
+            return try JSONDecoder().decode([NotifyItem].self, from: data)
         } catch {
             print("Decode failed \(error)")
-            items = []
+            return []
         }
-        return items
     }
     
-    func writeToFile() {
+    static func writeToFile(_ items: [NotifyItem]) {
         do {
             let fileURL = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first!.appendingPathComponent("NotifyItemModel").appendingPathExtension("json")
             let data = try JSONEncoder().encode(items)
